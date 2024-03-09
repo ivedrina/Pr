@@ -1,0 +1,146 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Education {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="/static/assets/css/material-dashboard.css" rel="stylesheet" />
+{% endblock stylesheets %}
+
+{% block content %}
+<div class="w3-container w3-teal">
+  <h2>Formal education</h2>
+</div>
+  <br>
+  <br>
+
+<div class="row"> 
+  <div class="col-md-4">
+    <div class="card card-profile">
+      <div class="card-avatar">
+        <a href="#pablo">
+          <img class="img" src="/static/assets/img/3ek.jpeg" />
+        </a>
+      </div>
+      <div class="card-body">
+        <h6 class="card-category text-gray">
+          {{ current_user.username }}
+        </h6>
+        <h4 class="card-title">
+          <h3>III. Ekonomska škola</h3>
+          <p>Trg J. F. Kennedyja 5, 10000 Zagreb</p>
+          <p><i>Sep 2003 – Jun 2007</i></p>
+        </h4>
+        <a class="btn btn-primary btn-round" href="http://ss-treca-ekonomska-zg.skole.hr/" target="_blank">High school</a> 
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-profile">
+      <div class="card-avatar">
+        <a href="#pablo">
+          <img class="img" src="/static/assets/img/fsb_logo.png" />
+        </a>
+      </div>
+      <div class="card-body">
+        <h6 class="card-category text-gray">
+          {{ current_user.username }}
+        </h6>
+        <h4 class="card-title">
+          <h3>Faculty of Mechanical Engineering and Naval Architecture</h3>
+          <p>Ul. Ivana Lučića 5, 10000 Zagreb</p>
+          <p><i>Oct 2007 – Jan 2014</i></p></h4>
+          <a class="btn btn-primary btn-round" href="https://www.fsb.unizg.hr/index.php?fsbonline_en&lang=en" target="_blank">University</a> 
+      </div>
+    </div>
+  </div>
+  </div> 
+  <div class="w3-container w3-teal">
+    <h2>Courses</h2>
+  </div> 
+</div> 
+<br>
+<br>
+<div class="row"> 
+  <div class="col-md-4">
+    <div class="card card-profile">
+      <div class="card-avatar">
+        <a href="#pablo">
+          <img class="img" src="/static/assets/img/html.jpg" />
+        </a>
+      </div>
+      <div class="card-body">
+        <h6 class="card-category text-gray">
+          {{ current_user.username }}
+        </h6>
+        <h4 class="card-title">
+          <h3>Introduction to HTML</h3>
+          <p>University of Zagreb, University Computing Centre - SRCE</p>
+          <p><i>Oct 2007 – Jan 2014</i></p></h4>
+          <a class="btn btn-primary btn-round" href="https://www.srce.unizg.hr/edu/web-tehnologije/C201" target="_blank">Online course</a> 
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-profile">
+      <div class="card-avatar">
+        <a href="#pablo">
+          <img class="img" src="/static/assets/img/css.png" />
+        </a>
+      </div>
+      <div class="card-body">
+        <h6 class="card-category text-gray">
+          {{ current_user.username }}
+        </h6>
+        <h4 class="card-title">
+          <h3>Introduction to CSS</h3>
+          <p>University of Zagreb, University Computing Centre - SRCE</p>
+          <p><i>Oct 2007 – Jan 2014</i></p></h4>
+          <a class="btn btn-primary btn-round" href="https://www.srce.unizg.hr/edu/web-tehnologije/C220" target="_blank">Online course</a> 
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-profile">
+      <div class="card-avatar">
+        <a href="#pablo">
+          <img class="img" src="/static/assets/img/python.jpeg" />
+        </a>
+      </div>
+      <div class="card-body">
+        <h6 class="card-category text-gray">
+          {{ current_user.username }}
+        </h6>
+        <h4 class="card-title">
+          <h3>Python</h3>
+          <p>Harvard - CS50's Introduction to Computer Science</p>
+          <p><i>Oct 2007 – Jan 2014</i></p></h4>
+          <a class="btn btn-primary btn-round" href="https://learning.edx.org/course/course-v1:HarvardX+CS50+X/home" target="_blank">Online course</a> 
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card card-profile">
+      <div class="card-avatar">
+        <a href="#pablo">
+          <img class="img" src="/static/assets/img/django.png" />
+        </a>
+      </div>
+      <div class="card-body">
+        <h6 class="card-category text-gray">
+          {{ current_user.username }}
+        </h6>
+        <h4 class="card-title">
+          <h3>Django</h3>
+          <p>Django for Everybody (Charles R. Severance - Clinical Professor, School of Information, University of Michigan)</p>
+          <p><i>Oct 2007 – Jan 2014</i></p></h4>
+          <a class="btn btn-primary btn-round" href="https://www.dj4e.com/" target="_blank">Online course</a> 
+      </div>
+    </div>
+  </div>
+</div> 
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

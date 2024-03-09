@@ -1,0 +1,135 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Contact {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-lg-10 col-md-12">
+      <div class="card">
+        <div class="card-header card-header-tabs card-header-primary">
+          <div class="nav-tabs-navigation">
+            <div class="nav-tabs-wrapper">
+              <span class="nav-tabs-title">Contact:</span>
+              <ul class="nav nav-tabs" data-tabs="tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#profile" data-toggle="tab">
+                    <i class="material-icons">phone</i> Tel. number
+                    <div class="ripple-container"></div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#settings" data-toggle="tab">
+                    <i class="material-icons"> mail</i> Email
+                    <div class="ripple-container"></div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#messages" data-toggle="tab">
+                    <i class="material-icons">web</i> Croatian website
+                    <div class="ripple-container"></div>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="tab-content">
+            <div class="tab-pane active" id="profile">
+              <h4>0955001188</h4>
+            </div>
+            <div class="tab-pane" id="messages">
+              <a href="https://github.com/ivedrina"> https://github.com/ivedrina</a>
+            </div>
+            <div class="tab-pane" id="settings">
+              <h4>inesvedrina@gmail.com</h4>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+  <div class="row"> 
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="card card-stats">
+        <div class="card-header card-header-info card-header-icon">
+          <div class="card-icon">
+            <i class="fa fa-github" href="https://github.com/ivedrina"></i>
+            </div>
+          <a href="https://github.com/ivedrina" class="ines">Portfolio</a>
+
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <i class="material-icons">update</i> Just Updated
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="card card-stats">
+        <div class="card-header card-header-info card-header-icon">
+          <div class="card-icon">
+            <i class="fa fa-linkedin"></i>
+          </div>
+          <a class="ines" href="https://www.linkedin.com/in/ines-vedrina-526843277/" >Linkedin</a>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <i class="material-icons">update</i> Just Updated
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="card card-stats">
+        <div class="card-header card-header-info card-header-icon">
+          <div class="card-icon">
+            <i class="fa fa-twitter"></i>
+          </div>
+          <p class="card-category">Followers</p>
+          <h3 class="card-title">+245</h3>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <i class="material-icons">update</i> Just Updated
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="card card-stats">
+        <div class="card-header card-header-info card-header-icon">
+          <div class="card-icon">
+            <i class="fa fa-facebook"></i>
+          </div>
+          <p class="card-category">Facebook</p>
+          <h3 class="card-title">+245</h3>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <i class="material-icons">update</i> Just Updated
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      md.initDashboardPageCharts();
+
+    });
+  </script>
+
+{% endblock javascripts %}

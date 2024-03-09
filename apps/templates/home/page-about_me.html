@@ -1,0 +1,116 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Page User {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+
+{% block stylesheets %}
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="/static/assets/css/material-dashboard.css" rel="stylesheet" />
+<link rel="stylesheet" href="/static/assets/css/ines.css">
+{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="flex-quotes">
+  <div class="col col-image" style="background-image: url(/static/assets/img/img1.jpg);background-position: 0% 53%;">
+      &nbsp;
+  </div>
+
+  <div class="col col-text">
+      <p>I was born on the 11<i>-th</i> of October 1988 in the beautiful city of Zagreb. 
+      </p>
+  </div>
+</div>
+
+
+<div class="flex-quotes">
+  <div class="col col-text col-left">
+    <p>Love living a constructive and fulfilled life. Learning and new experiences enrich my life.
+    </p>
+  </div>
+  <div class="col col-image" style="background-image: url(/static/assets/img/running.jpg);background-position: 0% 58%;">
+      &nbsp;
+  </div>
+  
+</div>
+
+
+<div class="flex-quotes">
+  <div class="col col-image" style="background-image: url(/static/assets/img/img2.jpg);background-position: center;">
+      &nbsp;
+  </div>
+  <div class="col col-text">
+      <p>I spend my free time in nature surrounded with family and friends. Running and yoga are my favorite  types of recreation.
+      </p>
+  </div>
+</div>
+
+
+<br>
+<div class="w3-container w3-teal">
+  <h3>Interests and hobbys</h3>
+</div>
+
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="/static/assets/img/reading.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Reading</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="/static/assets/img/learning.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Learning</h5>
+      </div>
+    </div>
+  </div>
+
+<div class="w3-third">
+  <div class="w3-card">
+    <img src="/static/assets/img/programming.jpg" style="width:100%">
+    <div class="w3-container">
+      <h5>Programming</h5>
+    </div>
+  </div>
+</div>
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="/static/assets/img/running1.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Runnig</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="/static/assets/img/hicking.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Hicking</h5>
+      </div>
+    </div>
+  </div>
+
+<div class="w3-third">
+  <div class="w3-card">
+    <img src="/static/assets/img/yoga.jpg" style="width:100%">
+    <div class="w3-container">
+      <h5>Yoga</h5>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

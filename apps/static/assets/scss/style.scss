@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700italic,700,400italic);
+
+$bg-color: #333;
+$text-color: #FFF;
+$border-color: #FFF;
+$color-primary: #458599;
+
+body {
+	background-color: $bg-color;
+	color: $text-color;
+	font-family: 'Merriweather', serif;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+}
+
+cite {
+	font-weight: 700;
+}
+
+.col-text {
+	background-color: $color-primary;
+}
+
+.flex-quotes {
+	display: flex;
+	flex-grow: 1;
+	border-bottom: 4px solid $border-color;
+}
+.col {
+	flex: 1
+}
+
+.col-text {
+	flex: 1.5;
+	@media (min-width: 640px){
+		border-left: 4px solid $border-color;
+	}
+}
+
+.col-left {
+	order: -1; 
+	@media (min-width: 640px){
+		border-left: none;
+		border-right: 4px solid $border-color;
+	}
+}
+
+.col-text p {
+	padding: 2em;
+	margin: 0;
+}
+
+.col-image {
+	display: none;
+	@media (min-width: 640px){
+		display: flex;
+		background-size: cover;
+	}
+}
